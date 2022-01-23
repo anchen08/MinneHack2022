@@ -18,4 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('digitalfootprint/', include('digitalfootprint.urls')),
+    path('admin/', admin.site.urls),
 ]
