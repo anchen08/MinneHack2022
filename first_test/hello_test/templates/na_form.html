@@ -1,0 +1,43 @@
+<DOCTYPE! html>
+<html>
+
+<head>
+	<title>Form</title>
+</head>
+
+<body>
+    <div id="Heading">
+		<h1>Input Form</h1>
+	</div>
+
+    <div class="form">
+        <form action="" method="POST">
+                 {% csrf_token %}
+		<label for="fname">First name:</label><br>
+		<input type="text" name="f_name"></input><br>
+
+		<label for="mname">Middle name:</label><br>
+		<input type="text" name="m_name"></input><br>
+
+		<label for="lname">Last name:</label><br>
+		<input type="text" name="l_name"></input><br>
+
+
+		<label for="phone">Phone number:</label><br>
+		<input type="text" name="phone"></input><br>
+
+
+		<label for="email">Email:</label><br>
+		<input type="text" name="email"></input><br>
+
+
+		<label for="zip">Zipcode:</label><br>
+		<input type="text" name="zip"></input><br>
+
+		<input type="submit"></input>
+	</form>
+    </div>
+
+
+</body>
+</html>

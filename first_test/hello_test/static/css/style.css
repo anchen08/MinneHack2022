@@ -1,0 +1,17 @@
+form {
+  font-family: "Papyrus", fantasy;
+  font-size: 5em;
+  color: white;
+
+
+  text-align:center;
+
+  border-style: double;
+  border-color: rgb(126,126,126);
+  background-color: rgb(126, 126, 126);
+}
+
+
+body{
+  background-color: rgb(126,126,126);
+}
