@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  {% load static %}
+  <link type="text/css" rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <title>What does the internet know about you?</title>
+  
+</head>
+<body>
+  <h1>What does the internet know about YOU?</h1>
+  <p>We use the internet more frequetly than ever, but, with every click, trackers know more about us. What do they know about you?</p>
+  <p>Enter your information below to scrape databases of Google, Facebook, and other sites to find out who knows you.</p>
+  <form method="POST">
+    {% csrf_token %}
+    <ul>
+      {{ form.as_ul }}
+    </ul>
+    <input type="submit" value="Submit"></input>
+  </form>
+</body>
+
