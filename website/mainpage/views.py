@@ -1,14 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
+
 from .forms import InputForm
 
 # Create your views here.
-
 def mainpage(request):
     if request.method == 'POST':
         print(request.GET)
         form = InputForm(request.POST)
-
         if form.is_valid():
             #process data
             fname = form.cleaned_data['fname']
@@ -26,9 +25,6 @@ def mainpage(request):
         form = InputForm()
 
     return render(request, 'index.html',{'form':form})
-
-
-
 
 def about(request):
     return render(request,'about.html',{}) 
