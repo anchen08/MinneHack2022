@@ -8,4 +8,4 @@ def index(request):
     return HttpResponse("Digital Footprint Project")
 
 def about(request):
-    return HttpReponse("About This WebApp")
+    return HttpResponse("About This WebApp")
