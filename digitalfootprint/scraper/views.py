@@ -15,7 +15,7 @@ def scraper(request):
         print(request.POST)
         if form.is_valid():
             #process data
-            fname = ''.join(form.cleaned_data.get("fname"))
+            fname = form.cleaned_data.get("fname")
             mname = form.cleaned_data.get("mname")
             lname = form.cleaned_data.get("lname")
             phone = form.cleaned_data.get("phone")
