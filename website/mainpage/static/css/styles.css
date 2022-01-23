@@ -34,3 +34,27 @@ input {
       background: black;
       opacity: 0.95;
      }
+
+.topnav{
+      color:black;
+      border-style: double;
+      background-color: black;
+      overflow: hidden;
+      text-align: center;
+      font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    }
+    
+    .topnav a {
+      border-style: hidden;
+      background-color: black;
+      text-align: center;
+      padding: 50px;
+    
+      font-size: 1.5em;
+      color: white;
+    }
+    
+    .topnav a.active {
+      background-color: white;
+      color: black;
+    }

@@ -34,3 +34,28 @@ input {
       background: black;
       opacity: 0.95;
      }
+
+     .topnav{
+      color:rgb(126,126,126);
+      border-style: double;
+      background-color: rgb(126,126,126);
+      overflow: hidden;
+      text-align: center;
+    }
+    
+    .topnav a {
+      border-style: hidden;
+      background-color: rgb(126,126,126);
+      text-align: center;
+      padding: 50px;
+    
+      font-size: 1.5em;
+      font-family: "Papyrus", fantasy;
+      color: white;
+    }
+    
+    .topnav a.active {
+      background-color: white;
+      color: rgb(126,126,126);
+      /* border-radius: 5px; not working :(((((*/
+    }
